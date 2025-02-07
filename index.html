@@ -1,196 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Jua&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css">
+    <title>mh! links</title>
+    
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-    <link rel="icon" href="/logo/mhtu-zip-logo.png">
-    <link rel="stylesheet" href="main copy.css">
-    <title>miffy personalizado!</title>
-</head>
+  <body>
+    <section>
+      <div class="video-background">
+        <video autoplay loop muted playsinline>
+          <source
+            src="/assets/store-info/background-pics/animation-bg.mp4"
+            type="video/mp4"
+          />
+          Seu navegador não suporta vídeos.
+        </video>
+      </div>
+      <div id="info-container">
+        <div class="store-info">
+          <div class="profile-pic"></div>
+          <div class="description-container">
+            <ul>
+              <li><h4>mh crochet!</h4></li>
 
-<body>
-
-    <!-- <div id="content-container">
-        <div id="key-request">
-            <h2>miffy personalizado</h2>
-            <p>para ter acesso ao conteúdo interativo,
-                insira a key.
-            </p>
-            <div class="btn-box">
-                <button id="btn-signin">entrar</button>
-            </div>
+              <li>♡ agenda aberta para pedidos março/25</li>
+              <li>✩ próximo evento: feira vibe, águas claras</li>
+              <li>📍 brasilia-df</li>
+            </ul>
+          </div>
         </div>
-        <div class="spinner" id="spinner"></div>
-    </div> -->
-
-
-
-    <header>
-        <a href="info.html"><img src="/scr/img/site-assets/header.png" alt="logo simplificada do site"
-                style="width: 110px;"></a>
-    </header>
-
-    <nav>
-        <!-- <p>bem vindo user</p> -->
-    </nav>
-
-    <div id="canvas">
-        <div class="base-selection">
-            <h3>escolha a base</h3>
-            <div id="miffy-box">
-                <div class="base-m">
-                    <img class="base-option" data-base="miffy" src="/scr/img/miffy-custom-assets/miffy-base.png"
-                        alt="miffy para personalização">
-                    <h5>miffy</h5>
-                </div>
-            </div>
+        <div id="links-container">
+          <ul>
+            <li><a href="">instagram</a></li>
+            <li><a href="">tiktok</a></li>
+            <li><a href="">shopee</a></li>
+            <li><a href="">catálogo</a></li>
+            <li><a href="">faça sua encomenda!</a></li>
+          </ul>
         </div>
+      </div>
+    </section>
 
-
-        <div id="base-custom" style="display: none;">
-            <div class="custom-channel">
-                <div class="showcase" id="showcase-miffy">
-                    <h3>personalize miffy!</h3>
-                    <p>aviso: </p>
-                    <div class="tabs">
-                        <button class="tab-btn active" onclick="showCategory('hoodies-category')">capuz</button>
-                        <button class="tab-btn" onclick="showCategory('dresses-category')">vestido</button>
-                        <button class="tab-btn" onclick="showCategory('costumes-category')">fantasias</button>
-                        <button class="tab-btn" onclick="showCategory('bags-category')">bolsa</button>
-                        <button class="tab-btn" onclick="showCategory('bows-category')">laços</button>
-                        <button class="tab-btn" onclick="showCategory('headphones-category')">fone</button>
-                        <button class="tab-btn" onclick="showCategory('extras-category')">extras</button>
-                    </div>
-
-                    <div class="tab-content">
-                        <div id="hoodies-category" class="category active">
-                            <img class="hoodie" alt="escolha de capuz"
-                                src="/scr/img/miffy-custom-assets/hoodies/hoodie-black.png">
-                            <img class="hoodie" alt="escolha de capuz"
-                                src="/scr/img/miffy-custom-assets/hoodies/hoodie-beige.png">
-                            <img class="hoodie" alt="escolha de capuz"
-                                src="/scr/img/miffy-custom-assets/hoodies/hoodie-brown.png">
-                            <img class="hoodie" alt="escolha de capuz"
-                                src="/scr/img/miffy-custom-assets/hoodies/hoodie-red.png">
-                            <img class="hoodie" alt="escolha de capuz"
-                                src="/scr/img/miffy-custom-assets/hoodies/hoodie-pink.png">
-                            <img class="hoodie" alt="escolha de capuz"
-                                src="/scr/img/miffy-custom-assets/hoodies/hoodie-blue.png">
-                        </div>
-                        <div id="dresses-category" class="category">
-                            <img class="dress" alt="escolha de vestido"
-                                src="/scr/img/miffy-custom-assets/dresses/dress-black.png">
-                            <img class="dress" alt="escolha de vestido"
-                                src="/scr/img/miffy-custom-assets/dresses/dress-beige.png">
-                            <img class="dress" alt="escolha de vestido"
-                                src="/scr/img/miffy-custom-assets/dresses/dress-red.png">
-                            <img class="dress" alt="escolha de vestido"
-                                src="/scr/img/miffy-custom-assets/dresses/dress-dotted.png">
-                        </div>
-                        <div id="headphones-category" class="category">
-                            <img class="headphone" alt="escolha de fones"
-                                src="/scr/img/miffy-custom-assets/headphone/headphone-black.png">
-                            <img class="headphone" alt="escolha de fones"
-                                src="/scr/img/miffy-custom-assets/headphone/headphone-gray.png">
-                        </div>
-                        <div id="costumes-category" class="category">
-                            <img class="dress" alt="escolha de fantasia"
-                                src="/scr/img/miffy-custom-assets/dresses/dress-marceline.png">
-                            <img class="dress" alt="escolha de fantasia"
-                                src="/scr/img/miffy-custom-assets/dresses/dress-bee.png">
-                            <img class="hoodie" alt="escolha de capuz"
-                                src="/scr/img/miffy-custom-assets/hoodies/hoodie-strbrry.png">
-                        </div>
-                        <div id="bags-category" class="category">
-                            <img class="bag" alt="escolha de bolsa"
-                                src="/scr/img/miffy-custom-assets/bags/bag-black.png">
-                        </div>
-                        <div id="bows-category" class="category">
-                            <img class="bow" alt="escolha de laço"
-                                src="/scr/img/miffy-custom-assets/head-bows/bow-black.png">
-                            <img class="bow" alt="escolha de laço"
-                                src="/scr/img/miffy-custom-assets/head-bows/bow-beige.png">
-                            <img class="bow" alt="escolha de laço"
-                                src="/scr/img/miffy-custom-assets/head-bows/bow-red.png">
-                            <img class="bow" alt="escolha de laço"
-                                src="/scr/img/miffy-custom-assets/head-bows/bow-pink.png">
-                            <img class="bow" alt="escolha de laço"
-                                src="/scr/img/miffy-custom-assets/hoodie-bows/bow-low-beige.png">
-                            <img class="bow" alt="escolha de laço"
-                                src="/scr/img/miffy-custom-assets/hoodie-bows/bow-low-black.png">
-                            <img class="bow" alt="escolha de laço"
-                                src="/scr/img/miffy-custom-assets/hoodie-bows/bow-low-red.png">
-                            <img class="bow" alt="escolha de laço"
-                                src="/scr/img/miffy-custom-assets/hoodie-bows/bow-low-pink.png">
-                        </div>
-                        <div id="extras-category" class="category">
-                            <img class="extras" alt="escolha de decoração extra"
-                                src="/scr/img/miffy-custom-assets/extra-deco/hand-fruit.png">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="btn-done">
-                    <button id="custom-ready" class="custom-ready">pronto!</button>
-                </div>
-            </div>
-
-            <div class="preview" id="preview-container">
-                <div class="layers">
-                    <img src="" alt="base-preview" id="preview-base" />
-                    <img src="" alt="headphone-preview" id="preview-headphone" />
-                    <img src="" alt="bag-preview" id="preview-bag" />
-                    <img src="" alt="hoodie-preview" id="preview-hoodie" />
-                    <img src="" alt="dress-preview" id="preview-dress" />
-                    <img src="" alt="costume-preview" id="preview-costumes" />
-                    <img src="" alt="extras-preview" id="preview-extras" />
-                    <img src="" alt="bow-preview" id="preview-bow" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="">
-        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@myheartcrochet.zip/video/7464254882363559174"
-            data-video-id="7464254882363559174" style="max-width: 605px;min-width: 325px;">
-            <section> <a target="_blank" title="@myheartcrochet.zip"
-                    href="https://www.tiktok.com/@myheartcrochet.zip?refer=embed">@myheartcrochet.zip</a> finalizando
-                pingentes de biscuit🫶🏼 <a title="biscuit" target="_blank"
-                    href="https://www.tiktok.com/tag/biscuit?refer=embed">#biscuit</a> <a title="clayart"
-                    target="_blank" href="https://www.tiktok.com/tag/clayart?refer=embed">#clayart</a> <a title="clay"
-                    target="_blank" href="https://www.tiktok.com/tag/clay?refer=embed">#clay</a> <a title="phonecharm"
-                    target="_blank" href="https://www.tiktok.com/tag/phonecharm?refer=embed">#phonecharm</a> <a
-                    title="phonecharms" target="_blank"
-                    href="https://www.tiktok.com/tag/phonecharms?refer=embed">#phonecharms</a> <a title="artesanato"
-                    target="_blank" href="https://www.tiktok.com/tag/artesanato?refer=embed">#artesanato</a> <a
-                    title="trinkets" target="_blank"
-                    href="https://www.tiktok.com/tag/trinkets?refer=embed">#trinkets</a> <a target="_blank"
-                    title="♬ sonido original - ƙavƴ"
-                    href="https://www.tiktok.com/music/sonido-original-7235104108525996806?refer=embed">♬ sonido
-                    original - ƙavƴ</a> </section>
-        </blockquote>
-        <script async src="https://www.tiktok.com/embed.js"></script>
-    </div>
-
-    <footer>
-        <div class="nav-links">
-            <p><strong>info!</strong></p>
-            <a href="https://www.instagram.com/myheartcrochet.zip/"><i class="fa-brands fa-instagram"></i>instagram</a>
-            <a href="https://github.com/karolinadornelas"><i class="fa-brands fa-github"></i>github</a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i>whatsapp</a>
-        </div>
-    </footer>
-
-    <script src="main copy.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
